@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Poppins&display=swap');
+:root {
+    --azulOscuro: #00296b;
+    --azulMedio: #003f88;
+    --azulClaro: #00509d;
+    --amarilloOscuro: #fdc500;
+    --amarilloClaro: #ffd500;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Etiquetas */
+
+body {
+    background-color: var(--azulMedio);
+}
+
+h1 {
+    font-family: 'Dela Gothic One', cursive;
+    color: var(--amarilloOscuro);
+}
+
+h1>span {
+    color: white;
+    font-style: italic;
+}
+
+header {
+    background-color: var(--azulOscuro);
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li:hover>a {
+    border-bottom: 3px var(--amarilloOscuro) solid;
+    transition: 0.2s;
+}
+
+footer {
+    background-color: var(--azulOscuro);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+
+/* Clases */
+
+.menu {
+    width: 40%;
+    height: auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--azulOscuro);
+    justify-content: center;
+}
+
+.menu ul li {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    border-bottom: 3px var(--amarilloOscuro) solid;
+    transition: 0.2s;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-flex {
+    display: flex;
+    z-index: 999999;
+}
+
+.imagenesInicio {
+    width: 400px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.imagenesOpciones {
+    width: 200px;
+    margin-top: 20px;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.contenedor h3 {
+    padding: 10px;
+}
+
+.contenedor h3:hover {
+    background-color: var(--amarilloOscuro);
+    transition: 0.5s;
+    border-radius: 20px;
+}
+
+
+/* Ids */
+
+#encabezado {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+}
+
+#barraNav {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+#navP {
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+}
+
+#navP i {
+    color: white;
+    font-size: 2em;
+}
+
+#inicio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    background-color: var(--azulClaro);
+    padding: 20px;
+}
+
+#mensaje {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: justify;
+    color: white;
+}
+
+#mensaje h2 {
+    color: var(--amarilloOscuro);
+}
+
+#secciones {
+    display: flex;
+    flex-direction: column;
+}
+
+#secciones h2 {
+    color: var(--amarilloOscuro);
+    text-align: center;
+    margin-top: 20px;
+}
+
+#opciones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#consolas {
+    content: url(../img/consolas.png);
+}
+
+#consolas:hover {
+    content: url(../img/consolasHover.png);
+    transition: 0.5s;
+}
+
+#juegos {
+    content: url(../img/juegos.png);
+}
+
+#juegos:hover {
+    content: url(../img/juegosHover.png);
+    transition: 0.5s;
+}
+
+#accesorios {
+    content: url(../img/accesorios.png);
+}
+
+#accesorios:hover {
+    content: url(../img/accesoriosHover.png);
+    transition: 0.5s;
+}
+
+
+/* Ajustes de pantalla */
+
+
+/* Small */
+
+@media(max-width:640px) {
+    #navG {
+        display: none;
+    }
+    #logo {
+        display: none;
+    }
+    #logoMenu {
+        width: 100px;
+        height: 100px;
+        margin: auto;
+    }
+    #encabezado {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
+/* Medium */
+
+@media(min-width: 641px) and (max-width: 1007px) {
+    #navP {
+        display: none;
+    }
+}
+
+@media(min-width: 1008px) {
+    #navP {
+        display: none;
+    }
+}
