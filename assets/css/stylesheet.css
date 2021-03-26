@@ -236,6 +236,16 @@ footer {
     transition: 0.5s;
 }
 
+#tituloSecciones {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+#tituloSecciones span {
+    color: var(--amarilloOscuro);
+}
+
 
 /* Ajustes de pantalla */
 
