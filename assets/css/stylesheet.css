@@ -16,8 +16,14 @@
 
 /* Etiquetas */
 
+html {
+    height: auto;
+}
+
 body {
+    height: auto;
     background-color: var(--azulMedio);
+    min-height: 100%;
 }
 
 h1 {
@@ -54,7 +60,6 @@ footer {
     background-color: var(--azulOscuro);
     position: relative;
     bottom: 0;
-    left: 0;
     width: 100%;
     color: white;
     text-align: center;
@@ -108,7 +113,6 @@ footer {
 
 .imagenesOpciones {
     width: 200px;
-    margin-top: 20px;
 }
 
 .contenedor {
@@ -131,6 +135,60 @@ footer {
     background-color: var(--amarilloOscuro);
     transition: 0.5s;
     border-radius: 20px;
+}
+
+.tarjetaProducto {
+    width: 60%;
+    display: flex;
+    background-color: aliceblue;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.imagenProducto {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.detallesProducto {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.detallesProducto h3 {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 5px;
+}
+
+.descripcionProducto {
+    text-align: justify;
+    padding: 15px;
+}
+
+.precioProducto {
+    text-align: center;
+}
+
+.precioProducto span {
+    color: var(--azulMedio);
+}
+
+.btnComprar {
+    text-decoration: none;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: var(--amarilloClaro);
+    border-radius: 10px;
+    color: white;
+}
+
+.btnComprar:hover {
+    background-color: var(--amarilloOscuro);
 }
 
 
@@ -207,6 +265,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-top: 10px;
 }
 
 #consolas {
@@ -246,6 +305,27 @@ footer {
     color: var(--amarilloOscuro);
 }
 
+#tablaConsolas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#tablaJuegos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#tablaAccesorios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* Ajustes de pantalla */
 
@@ -270,6 +350,77 @@ footer {
         justify-content: space-between;
         align-items: center;
     }
+    #inicio {
+        display: flex;
+        flex-direction: column;
+    }
+    .imagenesInicio {
+        width: 90%;
+    }
+    #secciones {
+        display: flex;
+        flex-direction: column;
+    }
+    #opciones {
+        display: flex;
+        flex-direction: column;
+    }
+    .imagenesOpciones {
+        width: 150px;
+        height: auto;
+    }
+    .contenedor {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    /* ARREGLAR ESTA PARTE */
+    .tarjetaProducto {
+        width: 60%;
+        display: flex;
+        background-color: aliceblue;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+    .imagenProducto {
+        width: 250px;
+        height: auto;
+        border-radius: 10px;
+    }
+    .detallesProducto {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .detallesProducto h3 {
+        text-align: center;
+        font-size: 1.5em;
+        padding: 5px;
+    }
+    .descripcionProducto {
+        text-align: justify;
+        padding: 15px;
+    }
+    .precioProducto {
+        text-align: center;
+    }
+    .precioProducto span {
+        color: var(--azulMedio);
+    }
+    .btnComprar {
+        text-decoration: none;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 5px;
+        background-color: var(--amarilloClaro);
+        border-radius: 10px;
+        color: white;
+    }
+    .btnComprar:hover {
+        background-color: var(--amarilloOscuro);
+    }
 }
 
 
@@ -279,10 +430,16 @@ footer {
     #navP {
         display: none;
     }
+    #menuEscondido {
+        display: none;
+    }
 }
 
 @media(min-width: 1008px) {
     #navP {
+        display: none;
+    }
+    #menuEscondido {
         display: none;
     }
 }
