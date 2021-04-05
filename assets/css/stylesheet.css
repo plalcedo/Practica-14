@@ -326,6 +326,24 @@ footer {
     align-items: center;
 }
 
+#botonesCarrito {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+
+#cantidadCarrito {
+    color: white;
+    text-align: center;
+}
+
+#tablaCarrito {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* Ajustes de pantalla */
 
