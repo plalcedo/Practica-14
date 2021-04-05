@@ -377,16 +377,17 @@ footer {
     }
     /* ARREGLAR ESTA PARTE */
     .tarjetaProducto {
-        width: 60%;
+        width: 80%;
         display: flex;
         background-color: aliceblue;
         margin-top: 10px;
         border-radius: 5px;
     }
     .imagenProducto {
-        width: 250px;
-        height: auto;
+        width: 120px;
+        height: 120px;
         border-radius: 10px;
+        margin: auto;
     }
     .detallesProducto {
         display: flex;
@@ -401,6 +402,7 @@ footer {
     .descripcionProducto {
         text-align: justify;
         padding: 15px;
+        display: none;
     }
     .precioProducto {
         text-align: center;
